@@ -1,7 +1,7 @@
 import 'package:desafio_1/components/button_login_page.dart';
 import 'package:desafio_1/components/text_login_page.dart';
-import 'package:flutter/material.dart';
 import 'package:desafio_1/components/logo.dart';
+import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -21,7 +21,7 @@ class LoginPage extends StatelessWidget {
           ),
           const Padding(
             padding: EdgeInsets.only(top: 30, bottom: 5),
-            child: Text_login_page(
+            child: TextLoginPage(
               text: 'Get your Money',
               textColor: Colors.white,
               fontSize: 36,
@@ -30,7 +30,7 @@ class LoginPage extends StatelessWidget {
           ),
           const Padding(
             padding: EdgeInsets.only(bottom: 25),
-            child: Text_login_page(
+            child: TextLoginPage(
               text: 'Under Control',
               textColor: Colors.white,
               fontSize: 36,
@@ -39,7 +39,7 @@ class LoginPage extends StatelessWidget {
           ),
           const Padding(
             padding: EdgeInsets.only(bottom: 5),
-            child: Text_login_page(
+            child: TextLoginPage(
               text: 'Manage your expenses.',
               textColor: Color(0xFF6D6C6F),
               fontSize: 22,
@@ -48,38 +48,37 @@ class LoginPage extends StatelessWidget {
           ),
           const Padding(
             padding: EdgeInsets.only(bottom: 25),
-            child: Text_login_page(
+            child: TextLoginPage(
               text: 'Seamlessly',
               textColor: Color(0xFF6D6C6F),
               fontSize: 22,
               fontFamily: 'Sequel Sans',
             ),
           ),
-          Padding(
-            padding:
-                const EdgeInsets.only(top: 70, left: 10, right: 10, bottom: 5),
-            child: button_login_page(
+          const Padding(
+            padding: EdgeInsets.only(top: 70, left: 10, right: 10, bottom: 5),
+            child: ButtonLoginPage(
               text: 'Sign Up with Email ID',
               textColor: Colors.white,
-              buttonColor: const Color(0xFF5E5CE5),
-              image: Container(),
+              buttonColor: Color(0xFF5E5CE5),
               fontFamily: 'Sequel Sans',
               fontSize: 16,
+              image: SizedBox(),
             ),
           ),
           Padding(
             padding: const EdgeInsets.all(10),
-            child: button_login_page(
-              image: Container(
-                width: 35,
-                height: 35,
-                child: Image.asset('assets/images/google.png'),
-              ),
+            child: ButtonLoginPage(
               text: 'Sign Up With Google',
               textColor: Colors.black,
               buttonColor: Colors.white,
               fontFamily: 'Sequel Sans',
               fontSize: 16,
+              image: SizedBox(
+                width: 35,
+                height: 35,
+                child: Image.asset('assets/images/google.png'),
+              ),
             ),
           ),
           const Padding(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class button_login_page extends StatelessWidget {
+class ButtonLoginPage extends StatelessWidget {
   final String text;
   final dynamic buttonColor;
   final dynamic textColor;
@@ -8,7 +8,7 @@ class button_login_page extends StatelessWidget {
   final dynamic fontFamily;
   final dynamic fontSize;
 
-  const button_login_page(
+  const ButtonLoginPage(
       {super.key,
       required this.text,
       required this.textColor,
