@@ -16,6 +16,6 @@ class ShoppingCartController extends InheritedNotifier<ValueNotifier<int>> {
   }
 
   reduce() {
-    notifier!.value--;
+   notifier!.value > 0 ? notifier!.value-- : notifier!.value;
   }
 }
